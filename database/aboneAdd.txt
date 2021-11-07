@@ -1,0 +1,13 @@
+CREATE PROC aboneAdd
+@AboneID int,
+@AboneBas date,
+@AboneBit date,
+@AboneGazete int,
+@AboneDergi int
+as
+begin
+set nocount on
+insert into Abone(AboneID, AboneBas, AboneBit, AboneGazete, AboneDergi)
+values
+(@AboneID, @AboneBas, @AboneBit, @AboneGazete, @AboneDergi)
+end

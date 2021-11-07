@@ -1,0 +1,11 @@
+USE [AbonelikProje]
+GO
+/****** Object:  StoredProcedure [dbo].[AboneGore]    Script Date: 12/31/2020 12:39:24 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+ALTER Proc [dbo].[AboneGore]
+@MusAbone int
+as
+Select * from dbo.Musteri where MusAbone=@MusAbone
